@@ -1,0 +1,121 @@
+# -----------------------
+# Python
+# -----------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Byte-compiled files
+*.pyo
+*.pyd
+*.pkl
+
+# -----------------------
+# FastAPI / Gradio
+# -----------------------
+# Cache and state files
+*.db
+*.sqlite3
+*.log
+logs/
+uploads/
+temp/
+media/
+
+# -----------------------
+# Environment & Secrets
+# -----------------------
+.env
+.env.local
+.env.*.local
+google_credentials.json
+*.key
+*.pem
+*.cert
+credentials.json
+api_key.json
+
+# -----------------------
+# Node / Frontend (if used)
+# -----------------------
+node_modules/
+build/
+dist/
+package-lock.json
+yarn.lock
+
+# -----------------------
+# OS Generated Files
+# -----------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------
+# VS Code / IDEs
+# -----------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# -----------------------
+# Reports & Docs
+# -----------------------
+*.pdf
+docs/_build/
+*.docx
+*.pptx
+
+# -----------------------
+# Testing
+# -----------------------
+.pytest_cache/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.cache
+
+# -----------------------
+# Google AI Studio / Gemini
+# -----------------------
+# Keys and credentials
+googleai_config.json
+service_account.json
+gcloud_settings.json
+
+# Temporary model files
+*.ckpt
+*.h5
+*.pt
+*.onnx
+checkpoints/
+
+# -----------------------
+# Docker
+# -----------------------
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# -----------------------
+# Gradio Auto Saves
+# -----------------------
+gradio_cached_examples/
+gradio_tempfiles/
