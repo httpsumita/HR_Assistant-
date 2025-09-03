@@ -59,7 +59,7 @@ def create_resume_screener_ui():
     Experience with Docker, CI/CD pipelines, and MLOps is a plus
     """
     
-    with gr.Blocks(title="Resume Screening Tool") as resume_app:
+    with gr.Blocks(title="Resume Screening Tool") as demo:
         gr.Markdown("# Resume Screening Tool for Software Engineer Positions")
         
         with gr.Row():
@@ -82,7 +82,7 @@ def create_resume_screener_ui():
             outputs=output
         )
     
-    return resume_app
+    return demo
 
 # Create Gradio UI for Employee Sentiment Analysis
 def create_sentiment_analyzer_ui():
@@ -138,7 +138,7 @@ def create_sentiment_analyzer_ui():
     
     """
     
-    with gr.Blocks(title="Employee Sentiment Analysis Tool") as sentiment_app:
+    with gr.Blocks(title="Employee Sentiment Analysis Tool") as demo:
         gr.Markdown("# Employee Sentiment Analysis Tool")
         
         with gr.Row():
@@ -161,7 +161,7 @@ def create_sentiment_analyzer_ui():
             outputs=[output, plot_output]
         )
     
-    return sentiment_app
+    return demo
 
 # Combined app with tabs
 def create_hr_ai_tools_app():
@@ -182,8 +182,8 @@ def main():
     print("Starting HR AI Tools...")
     
     # Create and launch the app
-    app = create_hr_ai_tools_app()
+    demo = create_hr_ai_tools_app()
     print("Launching the web interface...")
-    return app
+    return demo
 
  
