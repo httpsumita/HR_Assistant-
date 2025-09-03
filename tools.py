@@ -184,8 +184,6 @@ def main():
     # Create and launch the app
     app = create_hr_ai_tools_app()
     print("Launching the web interface...")
-    app.launch(share=True)  # Set share=True if you want to generate a public link
-    
-    print("Web interface closed.")
+    return app
 
  
